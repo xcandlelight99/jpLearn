@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+div{
+    display: block;
+    padding: 20px;
+    height: 100vh;
+}
+#contentList{
+    display: grid;
+    grid-template-columns: repeat(32, 1fr);
+    padding: 20px;
+}
+li{
+    list-style: none;
+}
