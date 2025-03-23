@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    position: relative;
+}
+h1{
+    font-size: 2em;
+}
+li{
+    list-style: none;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: xx-large;
+}
+button{
+    background-color: transparent;
+    border: none;
+    font-size: xx-large;
+    top:50px;
+}
+#contentList{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.level1{
+    background-color: rgba(0,0,0,0.1);  
+}
+.levelundefined{
+    background-color: rgba(0,0,0,0.2);
+}
+#detail{
+    display: none;
+}
