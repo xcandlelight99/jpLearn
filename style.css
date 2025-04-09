@@ -11,10 +11,9 @@ h1{
 li{
     list-style: none;
     border: 3px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
     font-size: xx-large;
 }
 button{
@@ -28,13 +27,21 @@ button{
     display: grid;
     grid-template-columns: repeat(8, 1fr);
 }
-
 .level1{
     background-color: rgba(0,0,0,0.1);  
 }
 .levelundefined{
     background-color: rgba(0,0,0,0.2);
 }
-#detail{
+#hidden{
     display: none;
+}
+#kunSound{
+    text-decoration: underline;
+}
+#onSound{
+    text-decoration: underline dashed;
+}
+p{
+    font-size: xx-large ;
 }
