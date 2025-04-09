@@ -6,17 +6,8 @@ function displayName(){
         const para = document.createElement("li");
         para.innerHTML = 
         '<div>' + '<h1>' + dataAll[x].kanji + '</h1>' + '</div>' +
-        '<div id="hidden">' + 
-        '<span id="kunSound">' + dataAll[x].kun + '</span>' +
-        '<span>' + '・' + '</span>' +
-        '<span id="onSound">' + dataAll[x].on + '</span>' +
-        '</div>' +
-        '<div id="hidden">' + 
-        '<span>' + dataAll[x].meaning + '</span>' +
-        '<span>' + '・' + '</span>'  + 
-        '<span>' + dataAll[x].description + '</span>' +
-        '</div>';
-        para.className = "level" + dataAll[x].level;
+        '<div id="hidden">' + dataAll[x].reading + '</div>' +
+        '<div id="hidden">' + dataAll[x].meaning + '</div>';
         para.onclick = function(){
             const oneHidden = para.querySelector('#hidden');
             const allHidden = para.querySelectorAll('#hidden');
