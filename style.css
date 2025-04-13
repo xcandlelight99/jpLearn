@@ -25,7 +25,7 @@ button{
 #contentList{
     width: 100%;
     display: grid;
-    grid-template-column: 1fr;
+    grid-template-columns: 1fr;
 }
 .level1{
     background-color: rgba(0,0,0,0.1);  
