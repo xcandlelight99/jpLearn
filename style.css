@@ -25,7 +25,6 @@ button{
 #contentList{
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
 }
 .level1{
     background-color: rgba(0,0,0,0.1);  
