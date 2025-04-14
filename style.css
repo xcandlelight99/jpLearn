@@ -46,3 +46,13 @@ p{
     font-size: xx-large ;
 }
 
+@media (orientation: portrait) {
+    li{
+        grid-template-columns: 1fr;
+    }
+}
+@media (orientation: landscape) {
+    li{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
