@@ -5,10 +5,9 @@ function displayName(){
     for (let x in dataAll){
         const para = document.createElement("li");
         para.innerHTML = 
-        '<div>' + '<h1>' + dataAll[x].kanji + '</h1>' + '</div>' +
-        '<div>' + dataAll[x].reading + '</div>' +
-        '<div>' + dataAll[x].meaning + '</div>';
-        '<div>' + dataAll[x].description + '</div>';
+        '<span class="kanji">' + '<h1>' + dataAll[x].kanji + '</h1>' + '</span>' +
+        '<span class="reading">' + dataAll[x].reading + '</span>' + 
+        '<span class="example">' + dataAll[x].example + '</span>';
         document.getElementById("contentList").appendChild(para);
     }
 };

@@ -12,47 +12,27 @@ li{
     list-style: none;
     border: 3px solid black;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     grid-gap: 20px;
     font-size: xx-large;
+    grid-template-areas:
+    "kanji reading reading reading reading"
+    "example example example example example";
 }
-button{
-    background-color: transparent;
-    border: none;
-    font-size: xx-large;
-    top:50px;
+.kanji{
+    grid-area: kanji;
+}
+.reading{
+    grid-area: reading;
+}
+.example{
+    grid-area: example;
 }
 #contentList{
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
 }
-.level1{
-    background-color: rgba(0,0,0,0.1);  
-}
-.levelundefined{
-    background-color: rgba(0,0,0,0.2);
-}
-#hidden{
-    display: none;
-}
-#kunSound{
-    text-decoration: underline;
-}
-#onSound{
-    text-decoration: underline dashed;
-}
 p{
     font-size: xx-large ;
-}
-
-@media (orientation: portrait) {
-    li{
-        grid-template-columns: 1fr;
-    }
-}
-@media (orientation: landscape) {
-    li{
-        grid-template-columns: repeat(3, 1fr);
-    }
 }
