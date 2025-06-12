@@ -3,10 +3,10 @@ import dataAll from './data.json' with {type: 'json'};
 
 function displayName(){
     for (let x in dataAll){
-        const para = document.createElement("li");
+        const para = document.createElement("tr");
         para.innerHTML = 
-        '<span class="kanji">' + '<h1>' + dataAll[x].kanji + '</h1>' + '</span>' +
-        '<span class="reading">' + dataAll[x].reading + '</span>';
+        '<th class="kanji">' + '<h1>' + dataAll[x].kanji + '</h1>' + '</th>' +
+        '<th class="reading">' + dataAll[x].reading + '</th>';
         document.getElementById("contentList").appendChild(para);
     }
 };
