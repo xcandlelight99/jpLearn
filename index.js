@@ -6,7 +6,8 @@ function displayName(){
         const para = document.createElement("tr");
         para.innerHTML = 
         '<th class="kanji">' + '<h1>' + dataAll[x].kanji + '</h1>' + '</th>' +
-        '<th class="reading">' + dataAll[x].example + '</th>';
+        '<th class="reading">' + dataAll[x].example + '</th>' +
+        '</br></br>';
         document.getElementById("contentList").appendChild(para);
     }
 };
